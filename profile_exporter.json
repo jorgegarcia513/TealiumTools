@@ -8,7 +8,7 @@
             "title": "Show Message",
             "description": "Press the button below to display a message alert.",
             "button_label": "Show me a message!",
-            "js": "console.log('Exists');"
+            "js": "https://cdn.jsdelivr.net/gh/jorgegarcia513/TealiumTools@main/profile_exporter.js"
         },
         "error" : {
             "title": "Show Error",
