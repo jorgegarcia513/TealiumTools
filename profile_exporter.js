@@ -18,7 +18,7 @@ function downloadCSV(csvContents) {
     a.download = 'download.csv';
     
     // Trigger the download by clicking the anchor tag
-    a.click();
+    // a.click();
 }
 
 function convertToCSV(data) {
