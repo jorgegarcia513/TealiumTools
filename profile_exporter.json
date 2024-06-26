@@ -8,7 +8,8 @@
             "title": "Export Profile",
             "description": "Press to export the current profile.",
             "button_label": "Export Profile",
-            "template": "<a> Link <a>",
+            "template": "https://cdn.jsdelivr.net/gh/jorgegarcia513/TealiumTools@main/profile_exporter.html",
+            "remote_template": "true",
             "js": "https://cdn.jsdelivr.net/gh/jorgegarcia513/TealiumTools@main/profile_exporter.js",
             "remote_js": "true"
         },
