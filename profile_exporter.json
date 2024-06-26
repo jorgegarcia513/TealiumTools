@@ -14,7 +14,7 @@
             "title": "Show Error",
             "description": "Press the button below to display an error alert.",
             "button_label": "Show me an error!",
-            "js": "tealiumTools.sendError('Error!', 'This is a sample error!')"
+            "js": "tealiumTools.sendError('Error!', 'This is a sample error!' )"
         }
     }
 }
