@@ -3,6 +3,7 @@ function inTealium() {
     var url = document.URL.toLowerCase();
     return (url.indexOf('.tealiumiq.com/tms') > 0);
 }
+
 function downloadCSV(csvContents) {
     // Create a Blob with the CSV data and type
     const blob = new Blob([csvContents], { type: 'text/csv;charset=utf-8,' });
@@ -85,9 +86,18 @@ function getTags() {
     return data;
 }
 
+function getProfiles() {
+    utui.service.get(utui.service.restapis.GET_PROFILES, { account: account, profile: "main",tool: "tt-tag_audit" });
+}
+
+const data = getTags();
+const profiles = getProfiles();
+const account = utui.login.account;
+
 if (inTealium) {
-    var data = getTags()
+    tealiumTools.send({ account: account, processing: false });
+
     var csv = convertToCSV(data)
-    console.log(csv);
+
     downloadCSV(csv);
 }
