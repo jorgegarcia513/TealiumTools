@@ -4,18 +4,18 @@
     "description": "This tools exports profile information.",
     "icon_url" : "https://tools.tealiumiq.com/tools/logo.png",
     "scripts": {
-        "message" : {
-            "title": "Show Message",
-            "description": "Press the button below to display a message alert.",
-            "button_label": "Show me a message!",
+        "Export" : {
+            "title": "Export Progile",
+            "description": "Press to export the current profile.",
+            "button_label": "Export Profile",
             "js": "https://cdn.jsdelivr.net/gh/jorgegarcia513/TealiumTools@main/profile_exporter.js",
             "remote_js": "true"
         },
-        "error" : {
-            "title": "Show Error",
-            "description": "Press the button below to display an error alert.",
-            "button_label": "Show me an error!",
-            "js": "tealiumTools.sendError('Error!', 'This is a sample error!' )"
+        "Local JS" : {
+            "title": "Local JS",
+            "description": "Run Local JS",
+            "button_label": "Run Local JS",
+            "js": "console.log('testing'"
         }
     }
 }
