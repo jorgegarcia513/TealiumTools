@@ -5,9 +5,10 @@
     "icon_url" : "https://tools.tealiumiq.com/tools/logo.png",
     "scripts": {
         "Export" : {
-            "title": "Export Progile",
+            "title": "Export Profile",
             "description": "Press to export the current profile.",
             "button_label": "Export Profile",
+            "template": "<a> Link <a>",
             "js": "https://cdn.jsdelivr.net/gh/jorgegarcia513/TealiumTools@main/profile_exporter.js",
             "remote_js": "true"
         },
