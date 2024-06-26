@@ -15,7 +15,7 @@
             "title": "Local JS",
             "description": "Run Local JS",
             "button_label": "Run Local JS",
-            "js": "console.log('testing'"
+            "js": "console.log('testing')"
         }
     }
 }
