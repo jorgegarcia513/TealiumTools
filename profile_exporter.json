@@ -1,0 +1,20 @@
+{
+    "id" : "asics_profile_exporter",
+    "title": "ASICS Profile Exporter",
+    "description": "This tools exports profile information.",
+    "icon_url" : "https://tools.tealiumiq.com/tools/logo.png",
+    "scripts": {
+        "message" : {
+            "title": "Show Message",
+            "description": "Press the button below to display a message alert.",
+            "button_label": "Show me a message!",
+            "js": "console.log('Exists');"
+        },
+        "error" : {
+            "title": "Show Error",
+            "description": "Press the button below to display an error alert.",
+            "button_label": "Show me an error!",
+            "js": "tealiumTools.sendError('Error!', 'This is a sample error!')"
+        }
+    }
+}
