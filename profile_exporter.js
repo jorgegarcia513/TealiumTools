@@ -34,7 +34,6 @@ function convertToCSV(data) {
     });
 
     var csvContents = '';
-
     refinedData.forEach(row => {
         csvContents += row.join(',') + '\n';
     });
@@ -46,19 +45,19 @@ function convertToCSV(data) {
 }
 
 var Tag = {
-    getTagName: function(tag) {
+    getName: function(tag) {
         return tag.tag_name;
     },
 
-    getTagUID: function(tag) {
+    getUID: function(tag) {
         return tag._id;
     },
 
-    getTagTitle: function(tag) {
+    getTitle: function(tag) {
         return tag.title.replace(',', '/');
     },
 
-    getTagEnvironments: function(tag) {
+    getEnvironments: function(tag) {
         var environments = '';
 
         for (const [key, value] of Object.entries(tag.selectedTargets)) {
@@ -77,10 +76,10 @@ function getTags() {
     var data = [];
     for (const [key, value] of Object.entries(utui.data.manage)) {
         data.push({
-            "UID": Tag.getTagUID(value),
-            "Name": Tag.getTagName(value),
-            "Title": Tag.getTagTitle(value),
-            "Publish Environments": Tag.getTagEnvironments(value)
+            "UID": Tag.getUID(value),
+            "Name": Tag.getName(value),
+            "Title": Tag.getTitle(value),
+            "Publish Environments": Tag.getEnvironments(value)
         });
     }
     return data;
