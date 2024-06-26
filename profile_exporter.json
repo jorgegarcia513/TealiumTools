@@ -8,7 +8,8 @@
             "title": "Show Message",
             "description": "Press the button below to display a message alert.",
             "button_label": "Show me a message!",
-            "js": "https://cdn.jsdelivr.net/gh/jorgegarcia513/TealiumTools@main/profile_exporter.js"
+            "js": "https://cdn.jsdelivr.net/gh/jorgegarcia513/TealiumTools@main/profile_exporter.js",
+            "remote_js": "true"
         },
         "error" : {
             "title": "Show Error",
